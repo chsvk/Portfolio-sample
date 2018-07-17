@@ -1,0 +1,173 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900); 
+
+
+body,html{
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: 'Roboto', Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body{
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,4a00fb+0,e600ff+100 */
+        background: #1e5799; /* Old browsers */
+        background: -moz-linear-gradient(45deg, #1e5799 0%, #4a00fb 0%, #e600ff 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #1e5799 0%,#4a00fb 0%,#e600ff 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #1e5799 0%,#4a00fb 0%,#e600ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#e600ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+aside{
+    color: white;
+    display: grid;
+    grid-template-columns: auto 40px;
+    padding: 2em; 
+}
+
+img{
+    width: 40px;
+    cursor: pointer;
+
+}
+
+figure{
+    margin: 0;
+}
+
+figcaption{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+nav{
+    background: white;
+}
+
+.active{
+    position: absolute;
+    display: block;
+    background: white;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+ul{
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    display: block;
+    padding: 1.5em 3em;
+    background: rgba(255,255,255,.35);
+    color: black;
+}
+
+main{
+    background: white;
+    padding: 1em 1.4em;
+
+}
+
+h1{
+    margin: 0;
+}
+
+p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.cta{
+    display: block;
+    color: white;
+    background: #0e7fff;
+    text-decoration: none;
+    padding: 8px 50px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 2em 0;
+}
+
+@media only screen and (min-width: 768px){
+
+    body{
+        display: grid;
+        grid-template-columns: 20% auto;
+        padding: 1em;
+        /* height: 100%; */
+    }
+    
+    img{
+        display: none;
+    }
+
+    aside{
+        background: #dce1f6;
+        grid-template-columns: auto;
+        grid-template-rows: 20% auto;
+        padding: 0;
+    }
+
+    main{
+        padding: 4em;
+        background: white url(images/bg.svg) no-repeat bottom right;
+        background-size: 70%;
+    }
+
+    #avatar {
+        /* display: block; */
+        border-radius: 50%;
+        background: white;
+        width: 50px;
+        height: 50px;
+        margin: 2em auto 1em auto;
+    }
+
+    figcaption{
+        text-align: center;
+        color: black;
+    }
+
+    ul{
+        display: block;
+        margin-top: 2em;
+        position: relative !important;
+        background: none !important;
+        width: 100% !important;
+
+    }
+
+    nav{
+        background: none;
+    }
+
+    ul li a:hover{
+        background-color: white;
+    }
+
+    .cta{
+        display: inline-block;
+        font-size: 1.3em;
+        padding: 0.8em 3em;
+    }
+
+    h1{
+        font-size: 3em;
+        /* margin-top: 2em; */
+    }
+
+    p{
+        font-size: 1.em;
+    }
+}
